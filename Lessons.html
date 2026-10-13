@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自己紹介ページ</title>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #cbdff0;
+      color: #333333;
+      margin: 0;
+      padding: 30px;
+    }
+    h1 {
+      text-align: center;
+      color: #3ecbe4;
+      margin-bottom: 30px;
+    }
+    .container {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+    .card {
+      background-color: #5cf1cc;
+      border: 1px solid #000000;
+      border-radius: 12px;
+      padding: 20px;
+      width: 320px;
+      box-shadow:
+       0 2px 8px rgba(0, 0, 0, 0.08),
+       0 8px 16px rgba(0, 0, 0, 0.10),
+       0 20px 40px rgba(0, 0, 0, 0.14);
+    }
+    .card:hover{
+        background-color: #5cc4f1;
+        border: 1px solid #000000;
+        border-radius: 12px;
+        padding: 20px;
+        width: 320px;
+        box-shadow: 
+        0 6px 12px rgba(0, 0, 0, 0.12),
+        0 18px 36px rgba(0, 0, 0, 0.18);
+    }
+    .section-title {
+      color: #3366aa;
+      border-left: 6px solid #7fb3ff;
+      padding-left: 10px;
+      margin-top: 0;
+    }
+    p {
+      line-height: 1.8;
+      font-size: 16px;
+    }
+    img {
+      width: 260px;
+      height: 200px;
+      object-fit: cover;
+      object-position: center 80%;
+      border-radius: 20px;
+      border: 3px solid #d0e4ff;
+      display: block;
+      margin: 0 auto 15px auto;
+    }
+    ol {
+      background-color: #f8fbff;
+      border: 2px solid #7aa7d9;
+      padding: 20px 20px 20px 35px;
+      border-radius: 10px;
+    }
+    ol li {
+      margin-bottom: 8px;
+      color: #2c3e50;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #ffffff;
+      margin-top: 10px;
+    }
+    th, td {
+      border: 1px solid #a8c6ec;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #dcebff;
+      color: #234a7d;
+    }
+    tr:nth-child(even) {
+      background-color: #f7fbff;
+    }
+    a {
+      color: #2a6fdb;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #ff6600;
+      text-decoration: underline;
+    }
+    .wide {
+      width: 260px;
+      height: 200px;
+      object-fit: cover;
+      object-position: center 20%;
+      border-radius: 20px;
+      border: 3px solid #d0e4ff;
+      display: block;
+      margin: 0 auto 15px auto;
+    }
+  </style>
+</head>
+<body>
+    <h1>自己紹介ページ</h1>
+ 
+  <div class="container">
+ 
+    <div class="card">
+      <h2 class="section-title">プロフィール</h2>
+      <img src="微信图片_20260424190705_40_104.jpg" alt="プロフィール画像">
+      <p>こんにちは。私は留学生です。Web制作を勉強しています。</p>
+      <p><a href="https://www.kcg.ac.jp/" target="_blank">学校のサイトを見る</a></p>
+    </div>
+    <div class="card">
+      <h2 class="section-title">趣味</h2>
+      <ol>
+        <li>旅行</li>
+        <li>音楽</li>
+        <li>ゲーム</li>
+        <li>自転車乗る</li>
+      </ol>
+      <img src="微信图片_20260424191330_41_104.jpg" class="wide">
+    </div>
+    <div class="card">
+      <h2 class="section-title">基本情報</h2>
+      <table>
+        <tr><th>項目</th><th>内容</th></tr>
+        <tr><td>名前</td><td>康靖驊</td></tr>
+        <tr><td>出身</td><td>中国</td></tr>
+        <tr><td>専攻</td><td>国際情報コース</td></tr>
+        <tr><td>好きな色</td><td>青</td></tr>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
